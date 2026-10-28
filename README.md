@@ -33,15 +33,20 @@ A local server is recommended so audio assets load consistently. No dependencies
 
 ```text
 waveform/
-├── index.html                 # Waveform landing page
-├── home.css                   # Landing page styles
-├── bar-visualizer.html        # Bar spectrum page
-├── bar-visualizer.css         # Bar spectrum styles
-├── bar-visualizer.js          # Bar playback and rendering
-├── circular-visualizer.html   # Circular spectrum page
-├── circular-visualizer.css    # Circular spectrum styles
-├── circular-visualizer.js     # Circular playback and rendering
-└── audio/                     # Sample audio tracks
+├── index.html
+├── README.md
+├── pages/
+│   ├── bar-visualizer.html
+│   └── circular-visualizer.html
+├── assets/
+│   ├── css/
+│   │   ├── home.css
+│   │   ├── bar-visualizer.css
+│   │   └── circular-visualizer.css
+│   └── js/
+│       ├── bar-visualizer.js
+│       └── circular-visualizer.js
+└── audio/                    # Sample audio tracks
 ```
 
 ## How It Works
