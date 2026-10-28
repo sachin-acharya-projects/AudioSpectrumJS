@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Waveform circular spectrum: a radial, real-time audio visualizer." />
+    <meta name="theme-color" content="#080d18" />
+    <title>Waveform — Circular Spectrum Visualizer</title>
+    <link rel="stylesheet" href="../assets/css/circular-visualizer.css" />
+    <script src="../assets/js/circular-visualizer.js" defer></script>
+  </head>
+  <body>
+    <main class="visualizer">
+      <header class="visualizer__header">
+        <h1>Circular Audio Visualizer</h1>
+        <p>Press play to start the visualization.</p>
+      </header>
+
+      <canvas
+        class="visualizer__canvas"
+        id="audio-visualizer"
+        aria-label="Circular audio frequency visualization"
+      ></canvas>
+
+      <section class="audio-controls" aria-label="Audio controls">
+        <label class="audio-controls__track-label" for="audio-track">Track</label>
+        <select class="audio-controls__track" id="audio-track">
+          <option value="../audio/Alan Walker Sabrina Carpenter &amp; Farruko  - On My Way.mp3">On My Way</option>
+          <option value="../audio/y2mate.com - BASS BOOSTED MUSIC MIX Best Of EDM _v720P (online-audio-converter.com).mp3">Bass Boosted EDM Mix</option>
+          <option value="../audio/y2mate.com - Pirates of the Caribbean Bass Boosted BGM  Captain Jack Sparrow_1080p.mp3">Pirates of the Caribbean — Bass Boosted</option>
+        </select>
+        <audio class="audio-controls__player" id="audio-player" preload="metadata" src="../audio/Alan Walker Sabrina Carpenter &amp; Farruko  - On My Way.mp3"></audio>
+        <div class="audio-controls__buttons">
+          <button class="audio-controls__button" type="button" data-action="play">Play</button>
+          <button class="audio-controls__button" type="button" data-action="pause" disabled>Pause</button>
+        </div>
+      </section>
+
+      <p class="visualizer__status" role="status" aria-live="polite">Ready to play.</p>
+      <a class="visualizer__back-link" href="../index.html">← Back to Waveform</a>
+    </main>
+  </body>
+</html>
