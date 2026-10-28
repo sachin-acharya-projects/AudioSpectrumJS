@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Waveform bar spectrum: a real-time audio analyzer with animated frequency bars." />
+    <meta name="theme-color" content="#080d18" />
+    <title>Waveform — Bar Spectrum Visualizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/bar-visualizer.css" />
+    <script src="../assets/js/bar-visualizer.js" defer></script>
+  </head>
+  <body>
+    <main class="visualizer-page">
+      <header class="page-header">
+        <h1>Bar Spectrum Visualizer</h1>
+        <p>See your music come to life.</p>
+      </header>
+
+      <section class="player" aria-label="Audio player">
+        <div class="player__controls">
+          <button class="icon-button" type="button" data-action="play" aria-label="Play audio">
+            <span aria-hidden="true">▶</span>
+          </button>
+          <button class="icon-button" type="button" data-action="pause" aria-label="Pause audio" disabled>
+            <span aria-hidden="true">Ⅱ</span>
+          </button>
+        </div>
+
+        <label class="track-picker">
+          <span class="track-picker__label">Choose a track</span>
+          <select id="track-select" class="track-picker__select">
+            <option value="../audio/Alan Walker Sabrina Carpenter &amp; Farruko  - On My Way.mp3">On My Way</option>
+            <option value="../audio/y2mate.com - BASS BOOSTED MUSIC MIX Best Of EDM _v720P (online-audio-converter.com).mp3">Bass Boosted EDM Mix</option>
+            <option value="../audio/y2mate.com - Pirates of the Caribbean Bass Boosted BGM  Captain Jack Sparrow_1080p.mp3">Pirates of the Caribbean — Bass Boosted</option>
+          </select>
+        </label>
+        <audio class="audio-player" preload="metadata" src="../audio/Alan Walker Sabrina Carpenter &amp; Farruko  - On My Way.mp3"></audio>
+      </section>
+
+      <section class="spectrum" aria-label="Audio frequency spectrum">
+        <div class="spectrum__bars" aria-hidden="true"></div>
+      </section>
+
+      <footer class="page-footer">
+        <a href="../index.html">← Back to Waveform</a>
+      </footer>
+    </main>
+  </body>
+</html>
