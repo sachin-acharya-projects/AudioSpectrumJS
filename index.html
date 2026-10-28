@@ -1,2 +1,36 @@
-<a href='Bar Visualizer.html'>Bar Visualizer</a>
-<a href='Circular Visualizer.html'>Circular Visualizer</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browser-based audio spectrum visualizers built with the Web Audio API and Canvas." />
+    <title>AudioSpectrumJS</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <main class="home">
+      <header class="home__header">
+        <p class="home__eyebrow">AUDIO TOOLKIT</p>
+        <h1>AudioSpectrumJS</h1>
+        <p class="home__description">Explore music through real-time audio visualization, powered by the Web Audio API.</p>
+      </header>
+
+      <section class="visualizer-grid" aria-label="Choose a visualizer">
+        <a class="visualizer-card" href="./bar-visualizer.html">
+          <span class="visualizer-card__number">01</span>
+          <h2>Bar Spectrum</h2>
+          <p>Watch frequency bands rise and fall with the music.</p>
+          <span class="visualizer-card__action">Open visualizer →</span>
+        </a>
+        <a class="visualizer-card" href="./circular-visualizer.html">
+          <span class="visualizer-card__number">02</span>
+          <h2>Circular Spectrum</h2>
+          <p>Explore a radial spectrum that responds to audio frequencies.</p>
+          <span class="visualizer-card__action">Open visualizer →</span>
+        </a>
+      </section>
+
+      <footer class="home__footer">Built with HTML, CSS, JavaScript, Canvas, and the Web Audio API.</footer>
+    </main>
+  </body>
+</html>
